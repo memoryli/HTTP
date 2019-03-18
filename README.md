@@ -19,15 +19,22 @@ URI、URL、URN<br>
 URI包含URL和URN<br>
 URN：永久统一资源符<br>
 HTTP的报文格式<br>
-请求报文
-首行：
-1、method（get、post、put、delete）
-2、url
-3、协议的版本
-header
+请求报文<br>
+首行：<br>
+1、method（get、post、put、delete）<br><br>
+2、url<br>
+3、协议的版本<br>
+header<br>
 
-响应报文
-http协议的版本，code
+响应报文<br>
+http协议的版本，code<br>
+跨域<br>
+缓存
+no-cache，no-store
+cache-control：设置no-cache，下次请求还是要到服务端请求，不然不能直接使用缓存。设置no-store，不缓存，无论浏览器勾不勾diabled cache
+去掉no-cache，再次刷新请求，会出现from memory cache，这样no-cache生效了
+请求的内容没有任何更改，告诉浏览器读缓存就行，那么服务端做个判断
+
 
 
 
