@@ -29,11 +29,26 @@ header<br>
 响应报文<br>
 http协议的版本，code<br>
 跨域<br>
-缓存
-no-cache，no-store
-cache-control：设置no-cache，下次请求还是要到服务端请求，不然不能直接使用缓存。设置no-store，不缓存，无论浏览器勾不勾diabled cache
-去掉no-cache，再次刷新请求，会出现from memory cache，这样no-cache生效了
+缓存<br>
+no-cache，no-store<br>
+cache-control：设置no-cache，下次请求还是要到服务端请求，不然不能直接使用缓存。设置no-store，不缓存，无论浏览器勾不勾diabled cache。
+去掉no-cache，再次刷新请求，会出现from memory cache，这样no-cache生效了<br>
 请求的内容没有任何更改，告诉浏览器读缓存就行，那么服务端做个判断
+cookie<br>
+设置header<br>
+Set-Cookie：['id=123; max-age=2000','name='lida; HttpOnly']<br>
+domain:设置相同的域名<br>
+HTTP长连接<br>
+connection：keep-alive，close
+数据协商
+Accept
+Accept-Encoding
+Accept-Language
+User-Agent：表示浏览器的一些东西（判断pc、移动端）
+content
+Content-Type
+Content-Encoding
+Content-Language
 
 
 
